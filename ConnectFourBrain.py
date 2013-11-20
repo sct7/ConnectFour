@@ -1,5 +1,11 @@
 import ConnectFourBoard
 
+def validMoves(board):
+	moves=[]
+	for col in range(board.cols()):
+		if board.height(col)<board.rows(): moves.append(col)
+	return moves
+
 #returns -1 if no victor yet, 0 if player 0 has won, and 1 if player 1 has won
 def victory(board):
 
