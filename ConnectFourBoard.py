@@ -13,7 +13,8 @@ class ConnectFourBoard:
 				if i<len(self.grid[j]): s+=str(self.grid[j][i])
 				else: s+=" "
 			s+="|\n"
-		s+="---------"
+		s+="---------\n"
+		s+=" 0123456 "
 		return s
 
 	def move(self, col, player):
