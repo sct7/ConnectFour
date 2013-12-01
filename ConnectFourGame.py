@@ -10,10 +10,8 @@ while v==-1:
 	
 	if turn==0:
 		print board
-		col=ConnectFourAI.findSmartMove(board,0)
-		#col=int(raw_input("Which column? "))
+		col=int(raw_input("Which column? "))
 	else:
-		print board
 		col=ConnectFourAI.findSmartMove(board,1)
 		print "playing " + str(col)
 
